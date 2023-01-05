@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacts</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:"montserrat", sans-serif;
+        }
+        .nav-bar{
+            width: 100%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #07a314;
+        }
+        .nav-bar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .nav-bar ul li a{
+            text-decoration: none;
+            color: aliceblue;
+            text-transform: uppercase;
+        }
+        .nav-bar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #f9004f;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .nav-bar ul li:hover::after{
+            width: 100%;
+
+        }
+        .nav-bar ul li button{
+            font-size: 20px;
+            color: antiquewhite;
+            outline: none;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font: 1em sans-serif;
+        }
+        .contact-section{
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(Wallpaper-1766.jpg);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .contact-section h1{
+            text-align: center;
+            color: #ddd;
+        }
+        .border{
+            width: 100px;
+            height: 10px;
+            background: #34495e;
+            margin: 40px auto;
+        }
+        .contact-form{
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
+        }
+        .contact-form-text{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 16px 0;
+            border: 0;
+            background: #111;
+            padding: 20px 40px;
+            outline: none;
+            color: #ddd;
+            transition: 0.5s;
+
+        }
+        .contact-form-text-focus{
+            box-shadow: 0 0 10px 4px #34495e;
+        }
+        textarea.contact-form-text{
+            resize: none;
+            height: 120px;
+        }
+        .contact-form-btn{
+            float: right;
+            border: 0;
+            background: #34495e;
+            color: #fff;
+            padding: 12px 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+
+
+        }
+        .contact-form-btn:hover{
+            background: #b76e29;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Myproject.html">My Projects</a></li>
+            <li><a href="Contact.html">Contacts</a></li>
+        </ul>
+        </div>
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <form class="contact-form" action="index.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="Your name">
+            <input type="email" class="contact-form-text" placeholder="Email">
+            <input type="number" class="contact-form-text" placeholder="Phone Number">
+            <textarea  class="contact-form-text" placeholder="Your message..."></textarea>
+            <input type="submit" class="contact-form-btn" value="Submit">
+            
+        
+
+        </form>
+    </div>
+    
+</body>
+</html>

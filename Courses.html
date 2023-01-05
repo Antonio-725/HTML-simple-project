@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses page</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(services-3.jpg);
+            font-family: sans-serif;
+        }
+        .table-container{
+            padding: 0 10%;
+            margin: 40px auto 0;
+        }
+        .nav-bar{
+            width: 100%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #07a314;
+        }
+        .nav-bar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .nav-bar ul li a{
+            text-decoration: none;
+            color: aliceblue;
+            text-transform: uppercase;
+        }
+        .nav-bar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #f9004f;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .nav-bar ul li:hover::after{
+            width: 100%;
+
+        }
+        .heading{
+            font-size: 40px;
+            text-align: center;
+            color: rgb(255, 238, 0);
+            margin-bottom: 40px;
+        }
+        .table{
+            width: 100%;
+            border-collapse: collapse;
+            opacity: 1.0;
+        }
+        .table thead{
+            background-color: #ee2828;
+        }
+        .table thead tr th{
+            font-size: 14px;
+            font-weight: medium;
+            color: #ffffff;
+            opacity: 1;
+            padding: 12px;
+            vertical-align: top;
+            border: 1px solid #dee2e685;
+
+        }
+        .table tbody tr td{
+            font-size: 14px;
+            letter-spacing: 0.35px;
+            font-weight: normal;
+            color: #f1f1f1;
+            background-color: #3c3f44;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #dee2e685;
+        }
+        
+        .table tbody tr td .button{
+            width: 130px;
+            text-decoration: none;
+            line-height: 35px;
+            display: inline-block;
+            background-color: #ff1046;
+            font-weight: medium;
+            color: #ffffff;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            font-size: 14px;
+            opacity: 1;
+            
+        }
+        
+        @media(max-width:768px){
+            .table thead{
+                display: none;
+            }
+            .table, .table tbody, .table tr, .table td{
+                display: block;
+                width: 100%;
+            }
+            .table tr{
+                margin-bottom: 15px;
+            }
+            .table tbody tr td{
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            .table td:before{
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+            
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="Myproject.html">My Projects</a></li>
+            <li><a href="Contact.html">Contacts</a></li>
+        </ul>
+        </div>
+<div class="table-container">
+    <h1 class="heading">Courses Table</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Supervisor</th>
+                    <th>Duration</th>
+                    <th>#</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Course">Computer Networks</td>
+                <td data-label="Supervisor">Jane Kinanu</td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            <tr>
+                <td data-label="Course"> Artificial Intelligence</td>
+                <td data-label="Supervisor">Kevin Gogo</td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            <tr>
+                <td data-label="Course"> Software development</td>
+                <td data-label="Supervisor">Fred Muthengi</td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            <tr>
+                <td data-label="Course">Cloud Computing</td>
+                <td data-label="Supervisor">Edna Too</td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            <tr>
+                <td data-label="Course">Big Data</td>
+                <td data-label="Supervisor">Dr Mwathi</td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            <tr>
+                <td data-label="Course"> Web Design</td>
+                <td data-label="Supervisor">Anthony Ngereki </td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            <tr>
+                <td data-label="Course"> Hardware Engineering</td>
+                <td data-label="Supervisor">Kevin Gogo</td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            <tr>
+                <td data-label="Course"> Social Net Engineering</td>
+                <td data-label="Supervisor">Jane Kinanu</td>
+                <td data-label="Duration">4 months</td>
+                <td data-label="#"><a href="Registration.html" class="button">Choose Course</a></td>
+                
+                
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>       
+<!--background-color: #32312f;-->
+    
+</body>
+</html>
